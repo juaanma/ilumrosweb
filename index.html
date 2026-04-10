@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilumros - Tienda Oficial</title>
+    <title>Ilumros - Premium Lighting Experience</title>
     <link rel="icon" type="image/png" href="assets/logo.png">
     <meta name="description"
-        content="Ilumros ofrece soluciones de iluminación modernas y de calidad. Encuentra lámparas, luces LED, exteriores y tendencias en decoración luminosa.">
+        content="Ilumros: Lighting that transforms your spaces. Premium lighting brand offering expert guidance and elegant modern designs for every environment.">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;600;700&family=Poppins:wght@700&display=swap"
         rel="stylesheet">
 
     <!-- Icons (FontAwesome Free) -->
@@ -34,14 +34,15 @@
 
             <nav class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link go-home-btn">Inicio</a>
-                <a href="#" class="nav-link view-catalog-btn">Catálogo</a>
-                <a href="#why-us" class="nav-link go-home-btn">Nosotros</a>
+                <a href="#spaces" class="nav-link go-home-btn">Espacios</a>
+                <a href="#" class="nav-link view-catalog-btn">Colección</a>
+                <a href="#inspiration" class="nav-link go-home-btn">Inspiración</a>
                 <a href="#contact" class="nav-link go-home-btn">Contacto</a>
             </nav>
 
             <div class="nav-icons">
                 <button class="cart-icon cart-open-btn" aria-label="Carrito de compras">
-                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-shopping-bag"></i>
                     <span class="cart-badge d-none" id="cartBadge">0</span>
                 </button>
                 <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
@@ -55,58 +56,188 @@
     <main id="main-view">
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <img src="assets/hero-bg.png" alt="Iluminación moderna de interiores" class="hero-bg">
+            <img src="assets/hero_interior_lighting_1775831534316.png" alt="Iluminación moderna de interiores"
+                class="hero-bg">
+            <div class="hero-overlay"></div>
             <div class="container relative z-10">
                 <div class="hero-content">
-                    <h1 class="hero-title">Iluminá tus espacios con <span>estilo</span></h1>
-                    <p class="hero-subtitle">Soluciones de iluminación modernas y de calidad premium. Diseños que
-                        transforman tu hogar.</p>
+                    <span class="premium-badge">Premium Collection</span>
+                    <h1 class="hero-title">Iluminación que <span>transforma</span> tus espacios</h1>
+                    <p class="hero-subtitle">En Ilumros hacemos mucho más que vender luces. Te ayudamos a elegir la
+                        iluminación ideal para despertar emociones y redefinir cada ambiente de tu hogar o proyecto.</p>
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary view-catalog-btn">Ver Catálogo Único</a>
-                        <a href="#featured" class="btn btn-secondary">Destacados</a>
+                        <a href="#" class="btn btn-primary view-catalog-btn">Ver Colección</a>
+                        <a href="https://wa.me/5493413578728" target="_blank" class="btn btn-whatsapp-outline"><i
+                                class="fab fa-whatsapp"></i> Asesoramiento por WhatsApp</a>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spaces Section -->
+        <section id="spaces" class="section spaces-section">
+            <div class="container">
+                <div class="section-header fade-up-element">
+                    <h2 class="section-title">Encuentra la luz perfecta para <span>cada espacio</span></h2>
+                    <p class="section-desc">Seleccionar la luminaria correcta depende del ambiente, la funcionalidad y
+                        el estilo de vida que deseas proyectar.</p>
+                </div>
+
+                <div class="spaces-grid fade-up-element">
+                    <a href="#" class="space-card view-catalog-btn" data-filter="Living">
+                        <div class="space-img-wrapper">
+                            <img src="assets/living_room_lighting_1775831551675.png" alt="Living Room Lighting">
+                        </div>
+                        <div class="space-content">
+                            <h3>Living Room</h3>
+                            <p>Luz cálida y envolvente para relajarse con estilo.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="space-card view-catalog-btn" data-filter="Bedroom">
+                        <div class="space-img-wrapper">
+                            <img src="assets/bedroom_lighting_1775831570191.png" alt="Bedroom Lighting">
+                        </div>
+                        <div class="space-content">
+                            <h3>Dormitorio</h3>
+                            <p>Texturas suaves y luz de acento para el máximo confort.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="space-card view-catalog-btn" data-filter="Kitchen">
+                        <div class="space-img-wrapper">
+                            <img src="assets/kitchen_lighting_1775831585604.png" alt="Kitchen Lighting">
+                        </div>
+                        <div class="space-content">
+                            <h3>Cocina</h3>
+                            <p>Iluminación nítida y moderna para destacar tu isla.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="space-card view-catalog-btn" data-filter="Exterior">
+                        <div class="space-img-wrapper">
+                            <img src="assets/outdoor_lighting_1775831601714.png" alt="Outdoor Lighting">
+                        </div>
+                        <div class="space-content">
+                            <h3>Espacios Exteriores</h3>
+                            <p>Destaca fachadas y crea patios invitanes por la noche.</p>
+                        </div>
+                    </a>
+                    <a href="#" class="space-card view-catalog-btn" data-filter="Commercial">
+                        <div class="space-img-wrapper">
+                            <img src="assets/commercial_lighting_1775831628624.png" alt="Commercial Lighting">
+                        </div>
+                        <div class="space-content">
+                            <h3>Proyectos Comerciales</h3>
+                            <p>Delineado potente y sofisticado para tu marca.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Featured Products -->
-        <section id="featured" class="section">
+        <section id="featured" class="section black-section">
             <div class="container">
-                <h2 class="section-title">Productos <span>Destacados</span></h2>
+                <div class="section-header fade-up-element">
+                    <h2 class="section-title text-white">Piezas con <span class="glow-text">presencia</span></h2>
+                    <p class="section-desc text-gray">Nuestra selección curada para aportar carácter y distinción a
+                        cualquier ambiente contemporáneo.</p>
+                </div>
                 <div class="product-grid" id="featuredGrid">
                     <!-- Products injected by JS -->
                 </div>
-                <div style="text-align: center; margin-top: 3rem;">
-                    <button class="btn btn-primary view-catalog-btn">Explorar toda la tienda</button>
+                <div style="text-align: center; margin-top: 4rem;">
+                    <button class="btn btn-primary-glow view-catalog-btn">Explorar la Colección Completa</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lighting Guide -->
+        <section id="guide" class="section guide-section">
+            <div class="container">
+                <div class="guide-wrapper fade-up-element">
+                    <div class="guide-text">
+                        <h2 class="section-title text-left">El secreto está en la <span>temperatura</span></h2>
+                        <p class="section-desc text-left">Elegir la tonalidad correcta es vital. Nuestro equipo de
+                            expertos está siempre dispuesto a guiarte en esta decisión crucial.</p>
+
+                        <div class="guide-items">
+                            <div class="guide-item warm-light">
+                                <div class="light-icon"></div>
+                                <div>
+                                    <h4>Luz Cálida (2700K - 3000K)</h4>
+                                    <p>Acogedora e íntima. Ideal para dormitorios, livings y restaurantes buscando un
+                                        tono relajante.</p>
+                                </div>
+                            </div>
+                            <div class="guide-item neutral-light">
+                                <div class="light-icon"></div>
+                                <div>
+                                    <h4>Luz Neutra (4000K)</h4>
+                                    <p>Equilibrio perfecto. La opción predilecta para cocinas, baños y zonas de lectura
+                                        modernas.</p>
+                                </div>
+                            </div>
+                            <div class="guide-item cool-light">
+                                <div class="light-icon"></div>
+                                <div>
+                                    <h4>Luz Fría (5000K+)</h4>
+                                    <p>Estimulante y nítida. Reservada para espacios médicos, talleres o áreas de alta
+                                        concentración.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5493413578728" target="_blank" class="btn btn-primary"
+                            style="margin-top: 2rem;">Solicita Asesoramiento</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspiration / Editorial -->
+        <section id="inspiration" class="section editorial-section">
+            <div class="editorial-grid">
+                <div class="editorial-image relative">
+                    <img src="assets/inspiration_editorial_1775831646438.png" alt="Inspiración de Iluminación">
+                </div>
+                <div class="editorial-content">
+                    <h2 class="editorial-title">El diseño correcto lo <span>cambia todo</span></h2>
+                    <p class="editorial-text">Creemos que una lámpara no es solo una fuente de luz, es una escultura
+                        funcional. En Ilumros seleccionamos piezas que dialogan con el espacio, creando sombras
+                        dramáticas, reflejos cálidos y puntos focales ineludibles que transforman lo ordinario en
+                        espectacular.</p>
+                    <a href="#" class="btn btn-secondary view-catalog-btn" style="margin-top: 1rem;">Inspírate con
+                        nuestras piezas</a>
                 </div>
             </div>
         </section>
 
         <!-- Why Choose Us -->
-        <section id="why-us" class="section" style="background-color: var(--color-surface);">
-            <div class="container">
-                <h2 class="section-title">Por qué <span>elegirnos</span></h2>
-                <div class="features-grid">
-                    <div class="feature-box">
-                        <i class="fas fa-gem feature-icon"></i>
-                        <h3 class="feature-title">Calidad Premium</h3>
-                        <p class="feature-desc">Materiales de la más alta exigencia para durabilidad y estética
-                            impecable.</p>
+        <section id="why-us" class="section premium-features bg-surface">
+            <div class="container fade-up-element">
+                <h2 class="section-title">El valor de elegir <span>Ilumros</span></h2>
+                <div class="features-grid modern-cards">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="fas fa-lightbulb"></i></div>
+                        <h3 class="feature-title">Asesoramiento Experto</h3>
+                        <p class="feature-desc">Diseñadores de interiores a tu disposición para planificar la
+                            iluminación de tu proyecto integral.</p>
                     </div>
-                    <div class="feature-box">
-                        <i class="fas fa-lightbulb feature-icon"></i>
-                        <h3 class="feature-title">Diseños Modernos</h3>
-                        <p class="feature-desc">Marcamos tendencia con estilos minimalistas y contemporáneos.</p>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="fas fa-gem"></i></div>
+                        <h3 class="feature-title">Calidad Duradera</h3>
+                        <p class="feature-desc">Construcción premium. Nuestras piezas están diseñadas para perdurar en
+                            el tiempo, tanto física como estilísticamente.</p>
                     </div>
-                    <div class="feature-box">
-                        <i class="fas fa-truck feature-icon"></i>
-                        <h3 class="feature-title">Envíos Rápidos</h3>
-                        <p class="feature-desc">Despachamos tu pedido con protección especial hacia todo el país.</p>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="fas fa-layer-group"></i></div>
+                        <h3 class="feature-title">Diseño de Vanguardia</h3>
+                        <p class="feature-desc">Curaduría exclusiva de las últimas tendencias globales en diseño de
+                            interiores y arquitectura.</p>
                     </div>
-                    <div class="feature-box">
-                        <i class="fas fa-headset feature-icon"></i>
-                        <h3 class="feature-title">Atención Personalizada</h3>
-                        <p class="feature-desc">Te asesoramos para elegir la iluminación perfecta para tu espacio.</p>
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper"><i class="fas fa-handshake"></i></div>
+                        <h3 class="feature-title">Servicio Personalizado</h3>
+                        <p class="feature-desc">Atención humana y cercana durante todo el proceso, desde la selección
+                            hasta la instalación.</p>
                     </div>
                 </div>
             </div>
@@ -114,29 +245,28 @@
 
         <!-- Testimonials -->
         <section class="section testimonials">
-            <div class="container">
-                <h2 class="section-title">Lo que dicen nuestros <span>clientes</span></h2>
-                <div class="testimonial-grid">
-                    <div class="testimonial-card">
-                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="testimonial-text">"La lámpara colgante cambió por completo mi living. Se nota el buen
-                            diseño y la calidad. Envío súper rápido."</p>
+            <div class="container fade-up-element">
+                <h2 class="section-title text-white">Espacios transformados. <span>Clientes felices.</span></h2>
+                <div class="testimonial-grid slider-animation">
+                    <div class="testimonial-card premium-test">
+                        <p class="testimonial-context">Living de Departamento Céntrico</p>
+                        <p class="testimonial-text">"La atención de los asesores por WhatsApp fue increíble. Entendieron
+                            exactamente el clima que quería lograr. La lámpara colgante principal se llevó todos los
+                            halagos de las visitas."</p>
                         <p class="testimonial-author">- Martín López</p>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p class="testimonial-text">"Excelente atención por WhatsApp. Me ayudaron a elegir los apliques
-                            exactos para mis pasillos y luz cálida encantadora."</p>
+                    <div class="testimonial-card premium-test">
+                        <p class="testimonial-context">Dormitorio Principal</p>
+                        <p class="testimonial-text">"Buscaba algo elegante pero que diera una luz cálida y relajante
+                            para leer de noche. Me recomendaron unos colgantes laterales, y el ambiente cambió de forma
+                            drástica para mejor."</p>
                         <p class="testimonial-author">- Sofía Rinaldi</p>
                     </div>
-                    <div class="testimonial-card">
-                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="testimonial-text">"Compré los veladores inteligentes y superaron mis expectativas. Se
-                            ven modernísimos en la mesita de luz."</p>
+                    <div class="testimonial-card premium-test">
+                        <p class="testimonial-context">Remodelación de Oficina Boutique</p>
+                        <p class="testimonial-text">"Compramos todo el sistema de iluminación lineal acá. La estética de
+                            la oficina quedó sumamente profesional y sofisticada. Destaco la calidad de los materiales."
+                        </p>
                         <p class="testimonial-author">- Facundo Gómez</p>
                     </div>
                 </div>
@@ -144,69 +274,57 @@
         </section>
 
         <!-- Contact Form -->
-        <section id="contact" class="section">
+        <section id="contact" class="section contact-premium">
             <div class="container">
-                <h2 class="section-title">Ponte en <span>Contacto</span></h2>
-                <div class="contact-container">
-                    <div>
-                        <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Cualquier duda, estamos aquí</h3>
+                <div class="contact-card shadow-premium fade-up-element">
+                    <div class="contact-info-col">
+                        <h2 class="contact-h2">Te ayudamos a encontrar la <span>luz ideal</span></h2>
+                        <p class="contact-sub">¿Tienes planos de tu casa? ¿Dudas sobre qué temperatura elegir?
+                            Contáctanos y un especialista te responderá a la brevedad.</p>
                         <div class="contact-info">
-                            <p><i class="fab fa-whatsapp"></i> +54 9 341 357-8728</p>
-                            <p><i class="far fa-envelope"></i> consultas@ilumros.com.ar</p>
+                            <a href="https://wa.me/5493413578728" target="_blank" class="wa-action-btn">
+                                <i class="fab fa-whatsapp"></i> Chat WhatsApp (341 357-8728)
+                            </a>
+                            <p><i class="far fa-envelope"></i> proyectos@ilumros.com.ar</p>
                             <p><i class="fas fa-map-marker-alt"></i> Pje Thorne 5573, Rosario, Santa Fe</p>
                         </div>
-
-                        <!-- Mini Map -->
-                        <a href="https://www.google.com/maps/search/?api=1&query=Pje+Thorne+5573,+Rosario,+Santa+Fe"
-                            target="_blank" style="display: block; margin-top: 2rem; text-decoration: none;">
-                            <div
-                                style="border-radius: 8px; overflow: hidden; height: 180px; box-shadow: var(--shadow-sm); position: relative; border: 1px solid var(--color-border);">
-                                <iframe
-                                    src="https://maps.google.com/maps?q=Pje%20Thorne%205573,%20Rosario,%20Santa%20Fe&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                    width="100%" height="100%" frameborder="0" style="border:0; pointer-events: none;"
-                                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                            <span
-                                style="display:inline-block; margin-top: 0.75rem; color: var(--color-secondary); font-weight: 600; font-size: 0.95rem;">
-                                <i class="fas fa-external-link-alt" style="margin-right: 5px;"></i> Abrir en Google Maps
-                            </span>
-                        </a>
                     </div>
-                    <form class="contact-form"
-                        onsubmit="event.preventDefault(); alert('Mensaje enviado. ¡Te contactaremos pronto!');">
-                        <div class="form-group">
-                            <input type="text" placeholder="Nombre completo" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Correo electrónico" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                    </form>
+                    <div class="contact-form-col">
+                        <h3 class="form-h3">Déjanos tu consulta</h3>
+                        <form class="contact-form style-minimal"
+                            onsubmit="event.preventDefault(); alert('Mensaje enviado. ¡Nos contactaremos a la brevedad!');">
+                            <div class="form-group row">
+                                <input type="text" placeholder="Nombre" required>
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="4" placeholder="Cuéntanos brevemente sobre tu proyecto..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Enviar Solicitud</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- WRAPPER FOR CATALOG VIEW (Hidden by default) -->
-    <main id="catalog-view" class="d-none catalog-view section">
+    <main id="catalog-view" class="d-none catalog-view section bg-surface">
         <div class="container">
             <div class="catalog-header">
-                <h2>Catálogo <span>Ilumros</span></h2>
-                <div class="catalog-filters">
+                <h2>Colección <span>Ilumros</span></h2>
+                <div class="catalog-filters modern-filters">
                     <button class="filter-btn active" data-filter="Todos">Todos</button>
-                    <button class="filter-btn" data-filter="Luces LED">Luces LED</button>
                     <button class="filter-btn" data-filter="Lámparas colgantes">Colgantes</button>
+                    <button class="filter-btn" data-filter="Veladores">Mesa y Piso</button>
                     <button class="filter-btn" data-filter="Apliques">Apliques</button>
                     <button class="filter-btn" data-filter="Iluminación exterior">Exterior</button>
-                    <button class="filter-btn" data-filter="Veladores">Veladores</button>
-                    <button class="filter-btn" data-filter="Decoración luminosa">Decoración</button>
+                    <button class="filter-btn" data-filter="Luces LED">Lineales / LED</button>
 
-                    <div class="search-bar">
-                        <i class="fas fa-search" style="color: var(--color-text-muted)"></i>
-                        <input type="text" id="searchInput" placeholder="Buscar productos...">
+                    <div class="search-bar search-modern">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="searchInput" placeholder="Buscar la pieza ideal...">
                     </div>
                 </div>
             </div>
@@ -218,42 +336,36 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer premium-footer">
         <div class="container">
             <div class="footer-grid">
-                <div>
+                <div class="footer-brand-col">
                     <a class="footer-brand" href="#home">
                         <img src="assets/logo.png" alt="Ilumros Logo">
                     </a>
-                    <p>Iluminando espacios con diseño, elegancia y tecnología.</p>
+                    <p class="footer-moto">Iluminando espacios con diseño, elegancia y tecnología. Soluciones para
+                        profesionales y hogares exigentes.</p>
                 </div>
                 <div>
-                    <h4 class="footer-title">Navegación</h4>
+                    <h4 class="footer-title">Colección</h4>
                     <ul class="footer-links">
-                        <li><a href="#home" class="go-home-btn">Inicio</a></li>
-                        <li><a href="#" class="view-catalog-btn">Tienda online</a></li>
-                        <li><a href="#why-us" class="go-home-btn">Nosotros</a></li>
+                        <li><a href="#" class="view-catalog-btn">Ver Catálogo completo</a></li>
+                        <li><a href="#featured" class="go-home-btn">Línea Destacada</a></li>
+                        <li><a href="#inspiration" class="go-home-btn">Inspiración de espacios</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-title">Políticas</h4>
+                    <h4 class="footer-title">Ayuda & Contacto</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Términos y Condiciones</a></li>
-                        <li><a href="#">Política de Devoluciones</a></li>
-                        <li><a href="#">Privacidad</a></li>
+                        <li><a href="https://wa.me/5493413578728" target="_blank">Asesoramiento WhatsApp</a></li>
+                        <li><a href="#">Proyectos a medida</a></li>
+                        <li><a href="#">Garantía y Devoluciones</a></li>
                     </ul>
-                </div>
-                <div>
-                    <h4 class="footer-title">Síguenos</h4>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-tiktok"></i></a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 Ilumros. Todos los derechos reservados.
+                &copy; 2026 Ilumros Premium Lighting. Desarrollado por <a href="https://juxnma.vercel.app/"
+                    target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: var(--color-secondary); font-family: 'Poppins', sans-serif; font-weight: 700; transition: color 0.3s ease;">Juanma</a>
             </div>
         </div>
     </footer>
@@ -262,7 +374,7 @@
     <div class="cart-overlay" id="cartOverlay"></div>
     <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-header">
-            <h3>Tu Carrito</h3>
+            <h3>Tu Selección</h3>
             <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
         </div>
         <div class="cart-items" id="cartItems">
@@ -270,24 +382,37 @@
         </div>
         <div class="cart-footer">
             <div class="cart-total">
-                <span>Total:</span>
+                <span>Subtotal:</span>
                 <span id="cartTotalAmount">$0</span>
             </div>
-            <button class="btn btn-checkout" id="checkoutBtn">
-                <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Comprar Ahora
+            <button class="btn btn-primary" id="checkoutBtn" style="width:100%; border-radius:4px;">
+                <i class="fab fa-whatsapp" style="margin-right: 8px;"></i> Solicitar Cotización
             </button>
+            <p class="cart-note">El checkout se completa vía WhatsApp con la asistencia de un asesor.</p>
         </div>
     </div>
 
     <!-- Floating WhatsApp -->
     <a href="https://wa.me/5493413578728" target="_blank" class="floating-whatsapp"
-        aria-label="Chat con nosotros en WhatsApp">
+        aria-label="Asesoramiento por WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Scripts -->
     <script src="js/data.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        // Intersection Observer for fade-up animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-up-element').forEach(el => observer.observe(el));
+    </script>
 </body>
 
 </html>

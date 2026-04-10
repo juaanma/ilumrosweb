@@ -7,7 +7,7 @@ const products = [
     price: 185000,
     category: "Luces LED",
     image: "assets/hero-bg.png",
-    description: "Diseño elegante y minimalista en negro mate. Estructura delgada ideal para salas de estar modernas con luz LED cálida."
+    description: "Ideal para un living moderno. Su perfil esbelto y diseño en negro mate aportan una presencia sofisticada y una luz envolvente."
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const products = [
     price: 65000,
     category: "Veladores",
     image: "assets/led-lamp.png",
-    description: "Lámpara de escritorio inteligente. Diseño geométrico con tecnología LED dimeable y control por app."
+    description: "Perfecto para dormitorios cálidos. Una pieza geométrica que relaja la vista y transforma tus noches de lectura."
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const products = [
     price: 125000,
     category: "Lámparas colgantes",
     image: "assets/pendant-light.png",
-    description: "Foco colgante premium con acabado dorado y difusor translúcido. Ideal para comedores o islas de cocina."
+    description: "Una obra de arte suspendida. Su acabado dorado dicta la personalidad de cualquier comedor o sala de reuniones."
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const products = [
     price: 85000,
     category: "Apliques",
     image: "assets/wall-sconce.png",
-    description: "Aplique de pared negro mate con aura de luz perimetral. Perfecto para pasillos o iluminación de acento."
+    description: "Iluminación decorativa con una fuerte presencia visual. Acabados premium que realzan la textura de tus muros."
   },
   {
     id: 5,
@@ -39,7 +39,7 @@ const products = [
     price: 78000,
     category: "Iluminación exterior",
     image: "assets/outdoor-light.png",
-    description: "Luminaria de aluminio resistente a la intemperie (IP65) para caminos exteriores y jardines de lujo."
+    description: "Diseñada para dialogar con la arquitectura exterior. Delinea caminos y jardines con una luz elegante y precisa."
   },
   {
     id: 6,
@@ -47,6 +47,6 @@ const products = [
     price: 92000,
     category: "Decoración luminosa",
     image: "assets/table-lamp.png",
-    description: "Una pieza decorativa en formato hongo. Base de bronce texturado y cúpula negra para un brillo suave."
+    description: "El toque final para escritorios de lujo o recibidores. Su cálido reflejo sobre la base de bronce invita a la contemplación."
   }
 ];
