@@ -685,6 +685,26 @@ button {
   /* Editorial details */
   .editorial-content { padding: 3rem 1.5rem; }
   .editorial-title { font-size: 2.2rem; }
+
+  /* Testimonial horizontal scroll for mobile */
+  .testimonial-grid { 
+    display: flex; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem; 
+    padding-bottom: 2rem; 
+    -webkit-overflow-scrolling: touch; 
+    margin-right: -2rem; /* Bleed edge */
+    padding-right: 2rem;
+  }
+  .testimonial-grid::-webkit-scrollbar { display: none; }
+  .testimonial-grid { -ms-overflow-style: none; scrollbar-width: none; }
+  
+  .premium-test { 
+    flex: 0 0 85%; /* Take up 85% of viewport width */
+    scroll-snap-align: center; 
+  }
 }
 
 @media (max-width: 480px) {
@@ -708,8 +728,11 @@ button {
   /* Specific styling overrides for small phones */
   .contact-h2 { font-size: 1.8rem; }
   .wa-action-btn { width: 100%; justify-content: center; font-size: 0.95rem; }
-  .premium-test { padding: 2rem 1.5rem; }
-  .premium-test::before { font-size: 4rem; top: 0px; }
+  
+  .premium-test { padding: 1.5rem; flex: 0 0 90%; }
+  .premium-test::before { font-size: 3.5rem; top: 5px; }
+  .testimonial-text { font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.5rem; }
+  
   .catalog-header h2 { font-size: 2.2rem; }
   .modern-filters .filter-btn { width: 100%; text-align: center; } /* Stack filters */
 }
