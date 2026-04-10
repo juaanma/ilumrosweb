@@ -637,7 +637,7 @@ button {
 .floating-whatsapp:hover { transform: scale(1.1); background-color: #128C7E; color: white;}
 
 /* ==============================================================================
-   RESPONSIVE DESIGN
+   RESPONSIVE DESIGN (MOBILE OPTIMIZED)
    ============================================================================== */
 @media (max-width: 992px) {
   .hero-title { font-size: 3.5rem; }
@@ -647,19 +647,69 @@ button {
   .footer-grid { grid-template-columns: 1fr; gap: 2rem;}
   .spaces-grid { grid-auto-rows: 250px; }
   .space-card:nth-child(n) { grid-column: span 12; }
+  
+  /* Guide items adjustment */
+  .guide-item { flex-direction: column; align-items: center; text-align: center; border-left: none; border-top: 4px solid transparent; }
+  .warm-light { border-top-color: #ffb74d; }
+  .neutral-light { border-top-color: #e0e0e0; }
+  .cool-light { border-top-color: #4fc3f7; }
 }
 
 @media (max-width: 768px) {
+  .section { padding: 4rem 0; }
+  
+  /* Mobile Navbar Menu */
   .nav-menu {
     position: absolute; top: 80px; left: 0; width: 100%; background: white;
-    flex-direction: column; padding: 2rem; box-shadow: var(--shadow-md);
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); transition: 0.4s ease;
+    flex-direction: column; align-items: center; padding: 1.5rem 2rem; box-shadow: var(--shadow-lg);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); transition: 0.4s ease; gap: 0;
   }
   .nav-menu.active { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  .nav-link { font-size: 1.1rem; border-bottom: 1px solid var(--color-border); width: 100%; text-align: center; padding: 1.25rem 0; }
+  .nav-link:last-child { border-bottom: none; }
+  .nav-link::after { display: none; }
   .mobile-menu-btn { display: block; }
+  
+  /* Typography & Hero adjustments */
   .hero-title { font-size: 2.8rem; }
+  .hero-buttons { flex-direction: column; width: 100%; gap: 1rem; }
+  .hero-buttons .btn { width: 100%; }
+  .premium-badge { margin-bottom: 1.5rem; }
   .section-title { font-size: 2.2rem; }
-  .contact-info-col, .contact-form-col { padding: 2rem; }
+  
+  /* Contact & Form forms */
+  .contact-info-col, .contact-form-col { padding: 2.5rem 1.5rem; }
   .style-minimal .row { flex-direction: column; gap: 0;}
   .modern-filters .search-modern { margin-left: 0; width: 100%; max-width: 100%; margin-top: 1rem;}
+  
+  /* Editorial details */
+  .editorial-content { padding: 3rem 1.5rem; }
+  .editorial-title { font-size: 2.2rem; }
+}
+
+@media (max-width: 480px) {
+  /* Smaller screens / Phones */
+  .container { padding: 0 1.25rem; }
+  
+  .hero-title { font-size: 2.2rem; line-height: 1.1; }
+  .hero-subtitle { font-size: 1rem; margin-bottom: 2rem;}
+  
+  .section-title { font-size: 1.8rem; }
+  .section-desc { font-size: 0.95rem; }
+  
+  /* Cart sidebar */
+  .cart-sidebar { max-width: 100%; right: -100%; }
+  .cart-sidebar.active { right: 0; }
+  .cart-item { flex-direction: column; align-items: flex-start; gap: 1rem;}
+  .cart-item-img { width: 100%; height: auto; aspect-ratio: 1; }
+  .cart-item-info { width: 100%; }
+  .cart-item-controls { width: 100%; justify-content: space-between; margin-top: 1rem;}
+  
+  /* Specific styling overrides for small phones */
+  .contact-h2 { font-size: 1.8rem; }
+  .wa-action-btn { width: 100%; justify-content: center; font-size: 0.95rem; }
+  .premium-test { padding: 2rem 1.5rem; }
+  .premium-test::before { font-size: 4rem; top: 0px; }
+  .catalog-header h2 { font-size: 2.2rem; }
+  .modern-filters .filter-btn { width: 100%; text-align: center; } /* Stack filters */
 }
