@@ -4,8 +4,8 @@
 
 :root {
   /* Colors - Premium Palette */
-  --color-primary: #0f1115;        /* Deep Space Black/Navy */
-  --color-primary-light: #1c1f26;  /* Slightly lighter for cards */
+  --color-primary: #111111;        /* True Neutral Dark */
+  --color-primary-light: #181818;  /* Slightly lighter for cards */
   --color-secondary: #c9a263;      /* Sophisticated Warm Gold */
   --color-secondary-light: #dcb980;
   --color-accent: #e5cc98;         /* Metallic highlight */
@@ -14,7 +14,7 @@
   --color-text-main: #222222;      /* Off black text */
   --color-text-muted: #666666;     /* Muted Text */
   --color-border: #e6e6e6;         /* Soft Border */
-  --color-overlay: rgba(15, 17, 21, 0.7);
+  --color-overlay: rgba(17, 17, 17, 0.7);
 
   /* Typography */
   --font-heading: 'Outfit', sans-serif;
@@ -537,7 +537,7 @@ button {
 /* ==============================================================================
    TESTIMONIALS
    ============================================================================== */
-.testimonials { background-color: var(--color-primary); background-image: radial-gradient(circle at center, #1c1f26 0%, #0f1115 100%);}
+.testimonials { background-color: var(--color-primary); background-image: radial-gradient(circle at center, #1b1b1b 0%, #111111 100%);}
 .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top:3rem;}
 .premium-test { padding: 3rem; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); text-align: center; position: relative;}
 .premium-test::before { content: '"'; font-family: Georgia, serif; font-size: 5rem; color: rgba(201, 162, 99, 0.2); position: absolute; top: 10px; left: 50%; transform: translateX(-50%); line-height: 1;}
@@ -733,6 +733,6 @@ button {
   .premium-test::before { font-size: 3.5rem; top: 5px; }
   .testimonial-text { font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.5rem; }
   
-  .catalog-header h2 { font-size: 2.2rem; }
+  .catalog-header h2 { font-size: 1.8rem; }
   .modern-filters .filter-btn { width: 100%; text-align: center; } /* Stack filters */
 }
