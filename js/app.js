@@ -111,6 +111,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // View Switching
+    // Navigate to sections directly within the home view
+    const allNavLinks = document.querySelectorAll('.nav-link');
+    allNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if(navMenu.classList.contains('active')) {
+          navMenu.classList.remove('active');
+        }
+      });
+    });
+
     viewCatalogBtns.forEach(btn => btn.addEventListener('click', (e) => {
       e.preventDefault();
       switchToCatalog();
@@ -277,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function checkoutToWhatsApp() {
     if(cart.length === 0) return;
 
-    const phoneNumber = "5491100000000"; // Replace with real number
+    const phoneNumber = "5493413578728"; // Replace with real number
     let message = "Hola *Ilumros*! 💡\nQuisiera realizar el siguiente pedido:\n\n";
     
     let total = 0;
@@ -292,7 +302,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const encodedMessage = encodeURIComponent(message);
     const waUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
-    window.open(waUrl, '_blank');
+    // Usa window.location.href en lugar de window.open para evitar bloqueadores de pop-ups en celulares
+    window.location.href = waUrl;
   }
 
 });

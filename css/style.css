@@ -919,6 +919,7 @@ button {
     align-items: center;
     justify-content: center;
     transition: var(--transition-normal);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
   
   .nav-menu.active {
@@ -937,5 +938,124 @@ button {
   .search-bar {
     max-width: 100%;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .nav {
+    height: 70px;
+  }
+  .header {
+    background-color: white;
+  }
+  .nav-brand img {
+    height: 38px;
+  }
+
+  .hero {
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .product-info {
+    padding: 0.75rem;
+  }
+
+  .product-name {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .product-category {
+    font-size: 0.7rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .product-desc {
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Shows only 2 lines of text */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .product-price {
+    font-size: 1rem;
+  }
+
+  .btn-add-cart {
+    width: 32px;
+    height: 32px;
+    font-size: 0.85rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .cart-sidebar {
+    width: 100%;
+    max-width: 100%;
   }
 }
